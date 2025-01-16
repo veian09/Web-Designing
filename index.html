@@ -1,60 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-header text-center">
-                <h2>Personal Information</h2>
-            </div>
-            <div class="card-body">
-                <p><strong>Full Name: Veian Keth Cay-uman</strong> <span id="name"></span></p>
-                <p><strong>Email:</strong> <span id="email"></span></p>
-                <p><strong>Address:</strong> <span id="address"></span></p>
-                <p><strong>Phone Number:</strong> <span id="phone"></span></p>
-                <p><strong>Birthday:</strong> <span id="birthday"></span></p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="image/long.jpg" alt="Veian Keth Cay-uman" class="profile-picture">
+            <h1></h1>
+            <p>Web Developer | Programmer | Tech Enthusiast</p>
         </div>
-    </div>
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-header text-center">
-                <h2>Education</h2>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#personal">Personal Information</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interest">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="personal">
+            <h2>Personal Information</h2>
+            <p>FULLNAME: Veian Keth Cay-uman</p>
+            <p>EMAIL: 20201282@nbsc.edu.ph</p>
+            <p>ADDRESS: Dalirig, Manolo Fortich, Bukidnon</p>
+            <p>MOBILE NUMBER: 09659410417</p>
+            <p>AGE: 23</p>
+            <p>BIRTHDAY: June 21, 2001</p>
+            <p>BIRTHPLACE: Dalirig, Manolo Fortich, Bukidnon</p>
+            <p>NATIONALITY: Filipino</p>
+            <p>RELIGION: Roman Catholic</p>
+            <p>CIVIL STATUS: Single</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>SQL & MongoDB</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>TERTIARY: BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY
+                Northern Bukidnon State College Kihare, Manolo Fortich, Bukidnon (2024-Present)</p>
+                <p>SECONDARY: MANOLO FORTICH NATIONAL HIGH SCHOOL Manolo Fortich, Bukidnon</p>
+                <p>PRIMARY: DALIRIG ELEMENTARY SCHOOL Dalirig, Manolo Fortich, Bukidnon</p>
+        </section>
+        <section id="interest">
+            <h2>Interests</h2>
+            <div class="job">
+                <h3>Professional Development Interests</h3>
+                <p>Learning languages</p>
+                <p>Coding or programming</p>
             </div>
-            <div class="card-body">
-                <p><strong>Elementary:</strong> <span id="name"></span></p>
-                <p><strong>High School:</strong> <span id="gender"></span></p>
-                <p><strong>College:</strong> <span id="address"></span></p>
+            <div class="job">
+                <h3>Research and Analytical Interests</h3>
+                <p>Reading</p>
+                <p>Researching</p>
+                <p>Solving puzzles or strategy games</p>
             </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-header text-center">
-                <h2>Skills</h2>
-            </div>
-            <div class="card-body">
-                <p><strong>Hard Skills:</strong> <span id="name"></span></p>
-                <p><strong>Soft Skills:</strong> <span id="gender"></span></p>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-header text-center">
-                <h2>Interests and Hobbies</h2>
-            </div>
-            <div class="card-body">
-                <p><strong>Interests:</strong> <span id="name"></span></p>
-                <p><strong>Hobbies:</strong> <span id="gender"></span></p>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Veian Keth Cay-uman. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

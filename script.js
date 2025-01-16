@@ -1,11 +1,4 @@
-const userDetails = {
-    name: "Veian Keth",
-    gender: "Female",
-    address: "Dalirig, MFB",
-    mobile: "123456789"
-}
-
-document.addEventListener("DOMContentLoaded",); {
-    document.getElementById("name").textContent = userDetails.name;
-
-}
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+});

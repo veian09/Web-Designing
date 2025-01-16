@@ -1,9 +1,137 @@
 body {
-    background-color: #0d6efd;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.card {
-    max-width: 400px;
+header {
+    font-family: "Roboto", sans-serif;
+    background: #F1FAEE;
+    color: #457B9D;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Profile picture in the header */
+.profile-pic {
+    width: 150px; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    margin: 0 auto 10px; /* Center the image and add spacing below */
+    display: block; /* Ensure it behaves as a block element */
+}
+
+/* Header container for layout */
+header .container {
+    text-align: center; /* Center-align all content */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #F1FAEE; /* Add a background color for the header */
+    color: #457B9D; /* Text color */
+}
+
+
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background:	#A8DADC;
+    color: #457B9D;
+}
+
+nav ul {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #457B9D;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
     margin: 0 auto;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid 	#b3cde0;
+    padding-bottom: 5px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid 	#b3cde0;
+}
+
+.job h3 {
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #1D3557;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #042234;
+}
+
+footer {
+    background: #A8DADC;
+    color: #F1FAEE;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
